@@ -1,16 +1,20 @@
+#include <QApplication>
 #include <QtWidgets>
-#include "mainWidget.h"
+#include "mainwidget.h"
+#include <iostream>
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	// Creates an instance of QApplication
 	QApplication a(argc, argv);
 
 	// This is our MainWidget class containing our GUI and functionality
 	MainWidget w;
+	// QWidget w;
+	w.resize(500, 300);
+	w.setWindowTitle("Qt Sample App - First Pass!");
 	w.show(); // Show main window
 
 	// Run the app
 	return a.exec();
-
 }
