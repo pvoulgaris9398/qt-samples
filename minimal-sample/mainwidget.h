@@ -2,6 +2,7 @@
 #define MAINWIDGET_H
 
 #include <QWidget>
+#include <QProcess>
 
 class QPushButton;
 class QTextBrowser;
@@ -18,11 +19,16 @@ public:
     explicit MainWidget(QWidget *parent = 0); // Constructor
     ~MainWidget();                            // Destructor
 
+private slots:
+    void onButtonReleased();
+    void onCaptureProcessOutput();
+
 private:
     QPushButton *button_;
     QTextBrowser *textBrowser_;
     QLabel *label_;
     QTextEdit *editor_;
+    QProcess process_;
 };
 
 #endif // MAINWIDGET_H

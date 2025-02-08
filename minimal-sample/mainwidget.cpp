@@ -26,6 +26,10 @@ MainWidget::MainWidget(QWidget *parent) : QWidget(parent)
    setLayout(mainLayout);
 
    setWindowTitle(tr("Connecting buttons to processes.."));
+
+   // Connect the Buttons "released" signal to MainWidget's onButtonReleased method
+   connect(button_, SIGNAL(released()), this, SLOT(onButtonReleased()));
+   connect(&process_, SIGNAL(readyReadStandardOutput()), this, SLOT(onCaptureProcessOutput()));
 }
 
 // Destructor
@@ -33,4 +37,21 @@ MainWidget::~MainWidget()
 {
    delete button_;
    delete textBrowser_;
+}
+
+// Handler for button click
+void MainWidget::onButtonReleased()
+{
+   textBrowser_->clear();
+   // textBrowser_->append(tr("Running command:"));
+
+   process_.setCurrentWriteChannel(QProcess::StandardOutput);
+   process_.start("ls -alh"); // Start the program
+}
+
+void MainWidget::onCaptureProcessOutput()
+{
+   QProcess *process = qobject_cast<QProcess *>(sender());
+   // if (process)
+   textBrowser_->append(process->readAllStandardOutput());
 }
