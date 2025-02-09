@@ -2,6 +2,30 @@
 
 ## `Saturday, 2/8/25`
 
+- Created a _very_ minimal implementation of this project, with just one file and confirmed:
+- `CONFIG -= entrypoint` is required to be added to the generated `*.pro` file (at least on windows)
+- Got a linker error"
+
+![1](2025-02-08-01.png)
+
+- Also, had to change the signature of main from:
+
+```c++
+int main(int argc, char *argv[])
+```
+- To: 
+
+```c++
+int main(int argc, char **argv)
+```
+- Changed it back _after_ a successful build and now it works with the original signature
+- Ran `rm -r release` to delete the compiled binaries
+- (Actually, `rm release/**` is better since the compiler depends on it existing)
+- Or just recreate prior to the next step
+- After this, tried to compile and got the linker error again
+- So, now, confirmed the second signature is required
+- Will try this same thing on my linux machine and see what happens
+
 - Working from [this](https://www.linux.org/threads/c-tutorial-create-qt-applications-without-qtcreator.18409/) example
 - Attempting to create a minimal `Qt` sample on `Windows` (for now)
 - This looks pretty cool and runs (so far), but a lot of it doesn't work right
