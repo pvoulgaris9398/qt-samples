@@ -2,6 +2,9 @@
 release
 debug
 
+# "moc_" files
+moc_*
+
 # Make file(s)
 Makefile*
 .qmake*
@@ -38,3 +41,4 @@ Makefile*
 *.exe
 *.out
 *.app
+

@@ -1,5 +1,6 @@
 #include <QtWidgets>
 #include "mainwidget.h"
+#include <QProcess>
 
 // Constructor for main widget
 MainWidget::MainWidget(QWidget *parent) : QWidget(parent)
