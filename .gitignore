@@ -1,4 +1,5 @@
 # Output directories
+build
 release
 debug
 

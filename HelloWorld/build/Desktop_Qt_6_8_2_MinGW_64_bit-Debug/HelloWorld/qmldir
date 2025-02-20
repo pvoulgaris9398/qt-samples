@@ -1,5 +1,0 @@
-module HelloWorld
-typeinfo appHelloWorld.qmltypes
-prefer :/qt/qml/HelloWorld/
-Main 1.0 Main.qml
-
