@@ -1,0 +1,20 @@
+# ninja log v6
+36	226	7604982122867276	ConsoleSample_autogen/timestamp	d7fe3143e998eb84
+36	226	7604982122867276	C:/_WorkLog/_Code/Qt/ConsoleSample/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/ConsoleSample_autogen/timestamp	d7fe3143e998eb84
+274	371	7604978480253703	CMakeFiles/ConsoleSample.dir/ConsoleSample_autogen/mocs_compilation.cpp.obj	4f0edf8063325c03
+36	226	7604982122867276	ConsoleSample_autogen/mocs_compilation.cpp	d7fe3143e998eb84
+36	226	7604982122867276	C:/_WorkLog/_Code/Qt/ConsoleSample/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/ConsoleSample_autogen/mocs_compilation.cpp	d7fe3143e998eb84
+21	60	7604984442430279	CMakeFiles/clean.additional	baedbe210acaa455
+236	4076	7604978854817662	CMakeFiles/ConsoleSample.dir/main.cpp.obj	2886529c168d3fdf
+4081	4255	7604978893259336	ConsoleSample.exe	efa100ed5583c6e
+60	72	7604984442815579	clean	df00256049ae556f
+26	278	7604985463995562	ConsoleSample_autogen/timestamp	d7fe3143e998eb84
+26	278	7604985463995562	ConsoleSample_autogen/mocs_compilation.cpp	d7fe3143e998eb84
+26	278	7604985463995562	C:/_WorkLog/_Code/Qt/ConsoleSample/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/ConsoleSample_autogen/timestamp	d7fe3143e998eb84
+26	278	7604985463995562	C:/_WorkLog/_Code/Qt/ConsoleSample/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/ConsoleSample_autogen/mocs_compilation.cpp	d7fe3143e998eb84
+19	52	7604985684056522	CMakeFiles/clean.additional	baedbe210acaa455
+53	66	7604985684386769	clean	df00256049ae556f
+18	279	7604985687605441	ConsoleSample_autogen/timestamp	d7fe3143e998eb84
+18	279	7604985687605441	ConsoleSample_autogen/mocs_compilation.cpp	d7fe3143e998eb84
+18	279	7604985687605441	C:/_WorkLog/_Code/Qt/ConsoleSample/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/ConsoleSample_autogen/timestamp	d7fe3143e998eb84
+18	279	7604985687605441	C:/_WorkLog/_Code/Qt/ConsoleSample/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/ConsoleSample_autogen/mocs_compilation.cpp	d7fe3143e998eb84

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/HelloWorld">C:/_WorkLog/_Code/Qt/HelloWorld/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/HelloWorld</file>
+
+  </qresource>
+</RCC>
