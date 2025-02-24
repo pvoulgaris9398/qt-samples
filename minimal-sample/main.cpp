@@ -9,7 +9,7 @@ int main(int argc, char **argv)
 	// This is our MainWidget class containing our GUI and functionality
 	MainWidget w;
 	// QWidget w;
-	w.resize(500, 300);
+	w.resize(750, 450);
 	w.setWindowTitle("Qt Sample App - First Pass!");
 	w.show(); // Show main window
 

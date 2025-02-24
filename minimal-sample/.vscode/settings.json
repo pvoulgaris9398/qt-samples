@@ -14,5 +14,12 @@
     "files.associations": {
         "iostream": "cpp",
         "ostream": "cpp"
-    }
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\_WorkLog\\_Code\\qt-samples\\minimal-sample\\release",
+            "binaryPath": "c:\\_WorkLog\\_Code\\qt-samples\\minimal-sample\\release\\minimal-sample.exe",
+            "binaryArgs": []
+        }
+    ]
 }
