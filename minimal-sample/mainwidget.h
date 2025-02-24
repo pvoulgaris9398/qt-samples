@@ -24,9 +24,9 @@ private slots:
     void onCaptureProcessOutput();
 
 private:
-    QPushButton *button_;
+    QPushButton * button_;
     QTextBrowser *textBrowser_;
-    QLabel *label_;
+    QLabel *label_; //test
     QTextEdit *editor_;
     QProcess process_;
 };

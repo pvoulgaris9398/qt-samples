@@ -11,7 +11,7 @@ MainWidget::MainWidget(QWidget *parent) : QWidget(parent)
    // It either doesn't show the window or errors with segmentation fault
    // textBrowser_->setText(tr("Initial entries..."));
 
-   editor_ = new QTextEdit();
+   editor_ =new QTextEdit();
    // Does not like this either!???
    // editor_->setText(tr("Initial entries..."));
 
