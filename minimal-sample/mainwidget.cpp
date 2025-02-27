@@ -1,6 +1,7 @@
 #include <QtWidgets>
 #include "mainwidget.h"
 #include <QProcess>
+#include <QDebug>
 
 // Constructor for main widget
 MainWidget::MainWidget(QWidget *parent) : QWidget(parent)
@@ -10,6 +11,8 @@ MainWidget::MainWidget(QWidget *parent) : QWidget(parent)
    // This does not work.
    // It either doesn't show the window or errors with segmentation fault
    // textBrowser_->setText(tr("Initial entries..."));
+
+   qDebug() << "test-test-test";
 
    editor_ =new QTextEdit();
    // Does not like this either!???
@@ -44,15 +47,16 @@ MainWidget::~MainWidget()
 void MainWidget::onButtonReleased()
 {
    textBrowser_->clear();
-   // textBrowser_->append(tr("Running command:"));
-
+   textBrowser_->append(tr("Running command:"));
+qDebug() << "onButtonReleased";
    process_.setCurrentWriteChannel(QProcess::StandardOutput);
    process_.start("ls -alh"); // Start the program
 }
 
 void MainWidget::onCaptureProcessOutput()
 {
+    qDebug() << "onCaptureProcessOutput";
    QProcess *process = qobject_cast<QProcess *>(sender());
-   // if (process)
+   if (process)
    textBrowser_->append(process->readAllStandardOutput());
 }
