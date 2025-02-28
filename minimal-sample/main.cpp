@@ -1,34 +1,35 @@
-#include <QtWidgets>
-#include "mainwidget.h"
+#include <QApplication>
+#include <QtGui>
+#include <QTextEdit>
 #include <QDebug>
-#include <QStandardItemModel>
+#include <QPushButton>
+#include <QVBoxLayout>
+#include <QObject>
 
 int main(int argc, char **argv)
 {
 	// Creates an instance of QApplication
 	QApplication a(argc, argv);
 
-    qDebug() << "testing";
+    QTextEdit textEdit;
+    QPushButton quitButton("Quit");
 
-    QStandardItemModel model(11, 3);
+    //https://ftp.nmr.mgh.harvard.edu/pub/dist/freesurfer/tutorial_versions/freesurfer/lib/qt/qt_doc/html/gettingstartedqt.html
+    //QObject::connect(&quitButton, SIGNAL(clicked()), a, SLOT(quit()));
 
-    model.setHorizontalHeaderItem(0, new QStandardItem(QString("Name")));
-    model.setHorizontalHeaderItem(1, new QStandardItem(QString("Age")));
-    model.setHorizontalHeaderItem(2, new QStandardItem(QString("Salary")));
+    QVBoxLayout layout;
 
-    QTableView tableView;
+    layout.addWidget(&textEdit);
+    layout.addWidget(&quitButton);
 
-    tableView.setModel(&model);
+    QWidget window;
+    window.setLayout(&layout);
 
-    tableView.show();
+    window.show();
 
-	// This is our MainWidget class containing our GUI and functionality
-    //MainWidget w;
-    //QWidget w;
-    //w.resize(750, 450);
-    //w.setWindowTitle("Qt Sample App - First Pass!");
-    //w.show(); // Show main window
+    qDebug() << "test-1";
 
 	// Run the app
 	return a.exec();
+
 }

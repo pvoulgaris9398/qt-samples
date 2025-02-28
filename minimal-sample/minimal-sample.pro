@@ -19,4 +19,5 @@ QT += widgets
 # Input
 HEADERS += mainwidget.h
 SOURCES += main.cpp mainwidget.cpp \
+    StyledItemDelegate.cpp \
     TableView.cpp
