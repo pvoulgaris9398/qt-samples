@@ -7,9 +7,10 @@ project(simplemqttclient LANGUAGES CXX)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 
-set(INSTALL_EXAMPLEDIR "/home/peter/_work/_code/qt-samples/qt-mqtt")
+#set(INSTALL_EXAMPLEDIR "/home/peter/_work/_code/qt-samples/qt-mqtt")
+set(INSTALL_EXAMPLEDIR "/C:/_WorkLog/_Code/qt-samples/qt-mqtt")
 
-find_package(Qt6 REQUIRED COMPONENTS Core Gui Mqtt Network Widgets -DQT_DEBUG_FIND_PACKAGE=ON)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 
 qt_add_executable(simplemqttclient
     main.cpp
@@ -28,8 +29,6 @@ target_compile_definitions(simplemqttclient PUBLIC
 target_link_libraries(simplemqttclient PUBLIC
     Qt::Core
     Qt::Gui
-    Qt::Mqtt
-    Qt::Network
 )
 
 target_link_libraries(simplemqttclient PUBLIC Qt::Widgets)

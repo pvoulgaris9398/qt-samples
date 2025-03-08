@@ -2,17 +2,20 @@
 #define _MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QMqttClient>
+// #include <QMqttClient>
 
-namespace Ui {
-class MainWindow;
+namespace Ui
+{
+    class MainWindow;
 }
 
-class MainWindow : public QMainWindow {
-Q_OBJECT
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
 public:
-exlicit MainWindow(QWidget* parent = nullptr);
-~MainWindow();
+    // exlicit
+    MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
 
 public slots:
     void setClientPort(int p);
@@ -29,9 +32,8 @@ private slots:
     void on_buttonSubscribed_clicked();
 
 private:
-
     Ui::MainWindow *ui;
-    QMqttClient *m_client;
-}
+    // QMqttClient *m_client;
+};
 
 #endif // _MAINWINDOW_H
